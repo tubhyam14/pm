@@ -40,7 +40,7 @@ function setup() {
 	tree = new Tree(1050,580);
 	ground = new Ground(width/2,600,width,20);
 
-  //create launcher with stone as bodyA
+  
   launcher = new Launcher(stone.body,{x:235,y:420});
 
 	Engine.run(engine);
@@ -51,7 +51,6 @@ function draw() {
   background(230);
   Engine.update(engine);
   textSize(25);
-  text("Hit the mangoes with the stone!!",50 ,50);
   image(boy ,200,340,200,300);
   
 
@@ -92,7 +91,7 @@ function draw() {
 
 function mouseDragged()
 {
-  // Set position of stone when mouse is dragged
+  
 	Matter.Body.setPosition(stone.body, {x:mouseX, y:mouseY});
 }
 
