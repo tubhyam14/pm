@@ -50,7 +50,7 @@ function draw() {
 
   background(230);
   Engine.update(engine);
-  textSize(25);
+  
   image(boy ,200,340,200,300);
   
 
